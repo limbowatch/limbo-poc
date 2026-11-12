@@ -1,0 +1,776 @@
+{
+  "taken_at": "2026-11-12T11:20Z",
+  "repository": "limbowatch/limbo-poc",
+  "how": "GET /repos/limbowatch/limbo-poc/dependabot/alerts with a maintainer token (the job token gets HTTP 403)",
+  "alerts_total": 95,
+  "alerts_by_package": {
+    "rack": 34,
+    "requests": 3,
+    "lodash": 4,
+    "com.fasterxml.jackson.core:jackson-databind": 50,
+    "golang.org/x/net": 4
+  },
+  "limbo_advisories_alerted": [],
+  "alerts": [
+    {
+      "advisory": "GHSA-27xj-rqx5-2255",
+      "created_at": "2026-11-12T11:14:20Z",
+      "ecosystem": "maven",
+      "manifest": "java/pom.xml",
+      "package": "com.fasterxml.jackson.core:jackson-databind",
+      "severity": "high"
+    },
+    {
+      "advisory": "GHSA-288c-cq4h-88gq",
+      "created_at": "2026-11-12T11:14:21Z",
+      "ecosystem": "maven",
+      "manifest": "java/pom.xml",
+      "package": "com.fasterxml.jackson.core:jackson-databind",
+      "severity": "high"
+    },
+    {
+      "advisory": "GHSA-4w82-r329-3q67",
+      "created_at": "2026-11-12T11:14:19Z",
+      "ecosystem": "maven",
+      "manifest": "java/pom.xml",
+      "package": "com.fasterxml.jackson.core:jackson-databind",
+      "severity": "critical"
+    },
+    {
+      "advisory": "GHSA-57j2-w4cx-62h2",
+      "created_at": "2026-11-12T11:14:21Z",
+      "ecosystem": "maven",
+      "manifest": "java/pom.xml",
+      "package": "com.fasterxml.jackson.core:jackson-databind",
+      "severity": "high"
+    },
+    {
+      "advisory": "GHSA-58pp-9c76-5625",
+      "created_at": "2026-11-12T11:14:20Z",
+      "ecosystem": "maven",
+      "manifest": "java/pom.xml",
+      "package": "com.fasterxml.jackson.core:jackson-databind",
+      "severity": "high"
+    },
+    {
+      "advisory": "GHSA-5949-rw7g-wx7w",
+      "created_at": "2026-11-12T11:14:22Z",
+      "ecosystem": "maven",
+      "manifest": "java/pom.xml",
+      "package": "com.fasterxml.jackson.core:jackson-databind",
+      "severity": "high"
+    },
+    {
+      "advisory": "GHSA-5gvw-p9qm-jgwh",
+      "created_at": "2026-11-12T11:14:26Z",
+      "ecosystem": "maven",
+      "manifest": "java/pom.xml",
+      "package": "com.fasterxml.jackson.core:jackson-databind",
+      "severity": "medium"
+    },
+    {
+      "advisory": "GHSA-5jmj-h7xm-6q6v",
+      "created_at": "2026-11-12T11:14:25Z",
+      "ecosystem": "maven",
+      "manifest": "java/pom.xml",
+      "package": "com.fasterxml.jackson.core:jackson-databind",
+      "severity": "medium"
+    },
+    {
+      "advisory": "GHSA-5p34-5m6p-p58g",
+      "created_at": "2026-11-12T11:14:19Z",
+      "ecosystem": "maven",
+      "manifest": "java/pom.xml",
+      "package": "com.fasterxml.jackson.core:jackson-databind",
+      "severity": "critical"
+    },
+    {
+      "advisory": "GHSA-5r5r-6hpj-8gg9",
+      "created_at": "2026-11-12T11:14:24Z",
+      "ecosystem": "maven",
+      "manifest": "java/pom.xml",
+      "package": "com.fasterxml.jackson.core:jackson-databind",
+      "severity": "high"
+    },
+    {
+      "advisory": "GHSA-758m-v56v-grj4",
+      "created_at": "2026-11-12T11:14:20Z",
+      "ecosystem": "maven",
+      "manifest": "java/pom.xml",
+      "package": "com.fasterxml.jackson.core:jackson-databind",
+      "severity": "high"
+    },
+    {
+      "advisory": "GHSA-89qr-369f-5m5x",
+      "created_at": "2026-11-12T11:14:24Z",
+      "ecosystem": "maven",
+      "manifest": "java/pom.xml",
+      "package": "com.fasterxml.jackson.core:jackson-databind",
+      "severity": "high"
+    },
+    {
+      "advisory": "GHSA-8c4j-34r4-xr8g",
+      "created_at": "2026-11-12T11:14:24Z",
+      "ecosystem": "maven",
+      "manifest": "java/pom.xml",
+      "package": "com.fasterxml.jackson.core:jackson-databind",
+      "severity": "high"
+    },
+    {
+      "advisory": "GHSA-8w26-6f25-cm9x",
+      "created_at": "2026-11-12T11:14:23Z",
+      "ecosystem": "maven",
+      "manifest": "java/pom.xml",
+      "package": "com.fasterxml.jackson.core:jackson-databind",
+      "severity": "high"
+    },
+    {
+      "advisory": "GHSA-95cm-88f5-f2c7",
+      "created_at": "2026-11-12T11:14:19Z",
+      "ecosystem": "maven",
+      "manifest": "java/pom.xml",
+      "package": "com.fasterxml.jackson.core:jackson-databind",
+      "severity": "high"
+    },
+    {
+      "advisory": "GHSA-9gph-22xh-8x98",
+      "created_at": "2026-11-12T11:14:24Z",
+      "ecosystem": "maven",
+      "manifest": "java/pom.xml",
+      "package": "com.fasterxml.jackson.core:jackson-databind",
+      "severity": "high"
+    },
+    {
+      "advisory": "GHSA-9m6f-7xcq-8vf8",
+      "created_at": "2026-11-12T11:14:24Z",
+      "ecosystem": "maven",
+      "manifest": "java/pom.xml",
+      "package": "com.fasterxml.jackson.core:jackson-databind",
+      "severity": "high"
+    },
+    {
+      "advisory": "GHSA-9vvp-fxw6-jcxr",
+      "created_at": "2026-11-12T11:14:20Z",
+      "ecosystem": "maven",
+      "manifest": "java/pom.xml",
+      "package": "com.fasterxml.jackson.core:jackson-databind",
+      "severity": "high"
+    },
+    {
+      "advisory": "GHSA-c265-37vj-cwcc",
+      "created_at": "2026-11-12T11:14:21Z",
+      "ecosystem": "maven",
+      "manifest": "java/pom.xml",
+      "package": "com.fasterxml.jackson.core:jackson-databind",
+      "severity": "high"
+    },
+    {
+      "advisory": "GHSA-c2q3-4qrh-fm48",
+      "created_at": "2026-11-12T11:14:21Z",
+      "ecosystem": "maven",
+      "manifest": "java/pom.xml",
+      "package": "com.fasterxml.jackson.core:jackson-databind",
+      "severity": "high"
+    },
+    {
+      "advisory": "GHSA-cvm9-fjm9-3572",
+      "created_at": "2026-11-12T11:14:24Z",
+      "ecosystem": "maven",
+      "manifest": "java/pom.xml",
+      "package": "com.fasterxml.jackson.core:jackson-databind",
+      "severity": "high"
+    },
+    {
+      "advisory": "GHSA-cxp5-3px4-pw24",
+      "created_at": "2026-11-12T11:14:25Z",
+      "ecosystem": "maven",
+      "manifest": "java/pom.xml",
+      "package": "com.fasterxml.jackson.core:jackson-databind",
+      "severity": "high"
+    },
+    {
+      "advisory": "GHSA-f9xh-2qgp-cq57",
+      "created_at": "2026-11-12T11:14:23Z",
+      "ecosystem": "maven",
+      "manifest": "java/pom.xml",
+      "package": "com.fasterxml.jackson.core:jackson-databind",
+      "severity": "high"
+    },
+    {
+      "advisory": "GHSA-fmmc-742q-jg75",
+      "created_at": "2026-11-12T11:14:22Z",
+      "ecosystem": "maven",
+      "manifest": "java/pom.xml",
+      "package": "com.fasterxml.jackson.core:jackson-databind",
+      "severity": "critical"
+    },
+    {
+      "advisory": "GHSA-fqwf-pjwf-7vqv",
+      "created_at": "2026-11-12T11:14:23Z",
+      "ecosystem": "maven",
+      "manifest": "java/pom.xml",
+      "package": "com.fasterxml.jackson.core:jackson-databind",
+      "severity": "high"
+    },
+    {
+      "advisory": "GHSA-gjmw-vf9h-g25v",
+      "created_at": "2026-11-12T11:14:22Z",
+      "ecosystem": "maven",
+      "manifest": "java/pom.xml",
+      "package": "com.fasterxml.jackson.core:jackson-databind",
+      "severity": "critical"
+    },
+    {
+      "advisory": "GHSA-gww7-p5w4-wrfv",
+      "created_at": "2026-11-12T11:14:19Z",
+      "ecosystem": "maven",
+      "manifest": "java/pom.xml",
+      "package": "com.fasterxml.jackson.core:jackson-databind",
+      "severity": "critical"
+    },
+    {
+      "advisory": "GHSA-h3cw-g4mq-c5x2",
+      "created_at": "2026-11-12T11:14:21Z",
+      "ecosystem": "maven",
+      "manifest": "java/pom.xml",
+      "package": "com.fasterxml.jackson.core:jackson-databind",
+      "severity": "high"
+    },
+    {
+      "advisory": "GHSA-h4rc-386g-6m85",
+      "created_at": "2026-11-12T11:14:19Z",
+      "ecosystem": "maven",
+      "manifest": "java/pom.xml",
+      "package": "com.fasterxml.jackson.core:jackson-databind",
+      "severity": "high"
+    },
+    {
+      "advisory": "GHSA-hgj6-7826-r7m5",
+      "created_at": "2026-11-12T11:14:25Z",
+      "ecosystem": "maven",
+      "manifest": "java/pom.xml",
+      "package": "com.fasterxml.jackson.core:jackson-databind",
+      "severity": "medium"
+    },
+    {
+      "advisory": "GHSA-j823-4qch-3rgm",
+      "created_at": "2026-11-12T11:14:20Z",
+      "ecosystem": "maven",
+      "manifest": "java/pom.xml",
+      "package": "com.fasterxml.jackson.core:jackson-databind",
+      "severity": "high"
+    },
+    {
+      "advisory": "GHSA-jjjh-jjxp-wpff",
+      "created_at": "2026-11-12T11:14:22Z",
+      "ecosystem": "maven",
+      "manifest": "java/pom.xml",
+      "package": "com.fasterxml.jackson.core:jackson-databind",
+      "severity": "high"
+    },
+    {
+      "advisory": "GHSA-m6x4-97wx-4q27",
+      "created_at": "2026-11-12T11:14:23Z",
+      "ecosystem": "maven",
+      "manifest": "java/pom.xml",
+      "package": "com.fasterxml.jackson.core:jackson-databind",
+      "severity": "high"
+    },
+    {
+      "advisory": "GHSA-mc6h-4qgp-37qh",
+      "created_at": "2026-11-12T11:14:20Z",
+      "ecosystem": "maven",
+      "manifest": "java/pom.xml",
+      "package": "com.fasterxml.jackson.core:jackson-databind",
+      "severity": "high"
+    },
+    {
+      "advisory": "GHSA-mx7p-6679-8g3q",
+      "created_at": "2026-11-12T11:14:24Z",
+      "ecosystem": "maven",
+      "manifest": "java/pom.xml",
+      "package": "com.fasterxml.jackson.core:jackson-databind",
+      "severity": "critical"
+    },
+    {
+      "advisory": "GHSA-p43x-xfjf-5jhr",
+      "created_at": "2026-11-12T11:14:22Z",
+      "ecosystem": "maven",
+      "manifest": "java/pom.xml",
+      "package": "com.fasterxml.jackson.core:jackson-databind",
+      "severity": "critical"
+    },
+    {
+      "advisory": "GHSA-q93h-jc49-78gg",
+      "created_at": "2026-11-12T11:14:22Z",
+      "ecosystem": "maven",
+      "manifest": "java/pom.xml",
+      "package": "com.fasterxml.jackson.core:jackson-databind",
+      "severity": "critical"
+    },
+    {
+      "advisory": "GHSA-qjw2-hr98-qgfh",
+      "created_at": "2026-11-12T11:14:22Z",
+      "ecosystem": "maven",
+      "manifest": "java/pom.xml",
+      "package": "com.fasterxml.jackson.core:jackson-databind",
+      "severity": "high"
+    },
+    {
+      "advisory": "GHSA-r3gr-cxrf-hg25",
+      "created_at": "2026-11-12T11:14:21Z",
+      "ecosystem": "maven",
+      "manifest": "java/pom.xml",
+      "package": "com.fasterxml.jackson.core:jackson-databind",
+      "severity": "high"
+    },
+    {
+      "advisory": "GHSA-r695-7vr9-jgc2",
+      "created_at": "2026-11-12T11:14:23Z",
+      "ecosystem": "maven",
+      "manifest": "java/pom.xml",
+      "package": "com.fasterxml.jackson.core:jackson-databind",
+      "severity": "high"
+    },
+    {
+      "advisory": "GHSA-rf6r-2c4q-2vwg",
+      "created_at": "2026-11-12T11:14:20Z",
+      "ecosystem": "maven",
+      "manifest": "java/pom.xml",
+      "package": "com.fasterxml.jackson.core:jackson-databind",
+      "severity": "high"
+    },
+    {
+      "advisory": "GHSA-rgv9-q543-rqg4",
+      "created_at": "2026-11-12T11:14:25Z",
+      "ecosystem": "maven",
+      "manifest": "java/pom.xml",
+      "package": "com.fasterxml.jackson.core:jackson-databind",
+      "severity": "high"
+    },
+    {
+      "advisory": "GHSA-rpr3-cw39-3pxh",
+      "created_at": "2026-11-12T11:14:22Z",
+      "ecosystem": "maven",
+      "manifest": "java/pom.xml",
+      "package": "com.fasterxml.jackson.core:jackson-databind",
+      "severity": "high"
+    },
+    {
+      "advisory": "GHSA-v3xw-c963-f5hc",
+      "created_at": "2026-11-12T11:14:20Z",
+      "ecosystem": "maven",
+      "manifest": "java/pom.xml",
+      "package": "com.fasterxml.jackson.core:jackson-databind",
+      "severity": "high"
+    },
+    {
+      "advisory": "GHSA-v585-23hc-c647",
+      "created_at": "2026-11-12T11:14:23Z",
+      "ecosystem": "maven",
+      "manifest": "java/pom.xml",
+      "package": "com.fasterxml.jackson.core:jackson-databind",
+      "severity": "high"
+    },
+    {
+      "advisory": "GHSA-vfqx-33qm-g869",
+      "created_at": "2026-11-12T11:14:23Z",
+      "ecosystem": "maven",
+      "manifest": "java/pom.xml",
+      "package": "com.fasterxml.jackson.core:jackson-databind",
+      "severity": "high"
+    },
+    {
+      "advisory": "GHSA-vvgp-rfg2-7rr6",
+      "created_at": "2026-11-12T11:14:25Z",
+      "ecosystem": "maven",
+      "manifest": "java/pom.xml",
+      "package": "com.fasterxml.jackson.core:jackson-databind",
+      "severity": "medium"
+    },
+    {
+      "advisory": "GHSA-wh8g-3j2c-rqj5",
+      "created_at": "2026-11-12T11:14:21Z",
+      "ecosystem": "maven",
+      "manifest": "java/pom.xml",
+      "package": "com.fasterxml.jackson.core:jackson-databind",
+      "severity": "high"
+    },
+    {
+      "advisory": "GHSA-wjgm-6hv5-3cvf",
+      "created_at": "2026-11-12T11:14:25Z",
+      "ecosystem": "maven",
+      "manifest": "java/pom.xml",
+      "package": "com.fasterxml.jackson.core:jackson-databind",
+      "severity": "medium"
+    },
+    {
+      "advisory": "GHSA-wv8q-qhhj-9h54",
+      "created_at": "2026-11-12T11:14:25Z",
+      "ecosystem": "maven",
+      "manifest": "java/pom.xml",
+      "package": "com.fasterxml.jackson.core:jackson-databind",
+      "severity": "high"
+    },
+    {
+      "advisory": "GHSA-4v7x-pqxf-cx7m",
+      "created_at": "2026-11-12T11:14:18Z",
+      "ecosystem": "go",
+      "manifest": "go/go.mod",
+      "package": "golang.org/x/net",
+      "severity": "medium"
+    },
+    {
+      "advisory": "GHSA-5cv4-jp36-h3mw",
+      "created_at": "2026-11-12T11:14:18Z",
+      "ecosystem": "go",
+      "manifest": "go/go.mod",
+      "package": "golang.org/x/net",
+      "severity": "medium"
+    },
+    {
+      "advisory": "GHSA-qxp5-gwg8-xv66",
+      "created_at": "2026-11-12T11:14:18Z",
+      "ecosystem": "go",
+      "manifest": "go/go.mod",
+      "package": "golang.org/x/net",
+      "severity": "medium"
+    },
+    {
+      "advisory": "GHSA-vvgc-356p-c3xw",
+      "created_at": "2026-11-12T11:14:18Z",
+      "ecosystem": "go",
+      "manifest": "go/go.mod",
+      "package": "golang.org/x/net",
+      "severity": "medium"
+    },
+    {
+      "advisory": "GHSA-29mw-wpgm-hmr9",
+      "created_at": "2026-11-12T11:14:26Z",
+      "ecosystem": "npm",
+      "manifest": "node/package-lock.json",
+      "package": "lodash",
+      "severity": "medium"
+    },
+    {
+      "advisory": "GHSA-35jh-r3h4-6jhm",
+      "created_at": "2026-11-12T11:14:26Z",
+      "ecosystem": "npm",
+      "manifest": "node/package-lock.json",
+      "package": "lodash",
+      "severity": "high"
+    },
+    {
+      "advisory": "GHSA-r5fr-rjxr-66jc",
+      "created_at": "2026-11-12T11:14:26Z",
+      "ecosystem": "npm",
+      "manifest": "node/package-lock.json",
+      "package": "lodash",
+      "severity": "high"
+    },
+    {
+      "advisory": "GHSA-xxjr-mmjv-4gpg",
+      "created_at": "2026-11-12T11:14:26Z",
+      "ecosystem": "npm",
+      "manifest": "node/package-lock.json",
+      "package": "lodash",
+      "severity": "medium"
+    },
+    {
+      "advisory": "GHSA-22f2-v57c-j9cx",
+      "created_at": "2026-11-12T11:14:28Z",
+      "ecosystem": "rubygems",
+      "manifest": "ruby/Gemfile.lock",
+      "package": "rack",
+      "severity": "medium"
+    },
+    {
+      "advisory": "GHSA-3h57-hmj3-gj3p",
+      "created_at": "2026-11-12T11:14:28Z",
+      "ecosystem": "rubygems",
+      "manifest": "ruby/Gemfile.lock",
+      "package": "rack",
+      "severity": "high"
+    },
+    {
+      "advisory": "GHSA-54rr-7fvw-6x8f",
+      "created_at": "2026-11-12T11:14:28Z",
+      "ecosystem": "rubygems",
+      "manifest": "ruby/Gemfile.lock",
+      "package": "rack",
+      "severity": "low"
+    },
+    {
+      "advisory": "GHSA-5v64-555j-wjxm",
+      "created_at": "2026-11-12T11:14:32Z",
+      "ecosystem": "rubygems",
+      "manifest": "ruby/Gemfile.lock",
+      "package": "rack",
+      "severity": "high"
+    },
+    {
+      "advisory": "GHSA-625h-95r8-8xpm",
+      "created_at": "2026-11-12T11:14:29Z",
+      "ecosystem": "rubygems",
+      "manifest": "ruby/Gemfile.lock",
+      "package": "rack",
+      "severity": "high"
+    },
+    {
+      "advisory": "GHSA-6xw4-3v39-52mm",
+      "created_at": "2026-11-12T11:14:30Z",
+      "ecosystem": "rubygems",
+      "manifest": "ruby/Gemfile.lock",
+      "package": "rack",
+      "severity": "high"
+    },
+    {
+      "advisory": "GHSA-7g2v-jj9q-g3rg",
+      "created_at": "2026-11-12T11:14:28Z",
+      "ecosystem": "rubygems",
+      "manifest": "ruby/Gemfile.lock",
+      "package": "rack",
+      "severity": "medium"
+    },
+    {
+      "advisory": "GHSA-7mqq-6cf9-v2qp",
+      "created_at": "2026-11-12T11:14:31Z",
+      "ecosystem": "rubygems",
+      "manifest": "ruby/Gemfile.lock",
+      "package": "rack",
+      "severity": "medium"
+    },
+    {
+      "advisory": "GHSA-7wqh-767x-r66v",
+      "created_at": "2026-11-12T11:14:29Z",
+      "ecosystem": "rubygems",
+      "manifest": "ruby/Gemfile.lock",
+      "package": "rack",
+      "severity": "high"
+    },
+    {
+      "advisory": "GHSA-8cgq-6mh2-7j6v",
+      "created_at": "2026-11-12T11:14:28Z",
+      "ecosystem": "rubygems",
+      "manifest": "ruby/Gemfile.lock",
+      "package": "rack",
+      "severity": "medium"
+    },
+    {
+      "advisory": "GHSA-8vqr-qjwx-82mw",
+      "created_at": "2026-11-12T11:14:31Z",
+      "ecosystem": "rubygems",
+      "manifest": "ruby/Gemfile.lock",
+      "package": "rack",
+      "severity": "high"
+    },
+    {
+      "advisory": "GHSA-93pm-5p5f-3ghx",
+      "created_at": "2026-11-12T11:14:27Z",
+      "ecosystem": "rubygems",
+      "manifest": "ruby/Gemfile.lock",
+      "package": "rack",
+      "severity": "low"
+    },
+    {
+      "advisory": "GHSA-c6qg-cjj8-47qp",
+      "created_at": "2026-11-12T11:14:28Z",
+      "ecosystem": "rubygems",
+      "manifest": "ruby/Gemfile.lock",
+      "package": "rack",
+      "severity": "low"
+    },
+    {
+      "advisory": "GHSA-gjh7-p2fx-99vx",
+      "created_at": "2026-11-12T11:14:29Z",
+      "ecosystem": "rubygems",
+      "manifest": "ruby/Gemfile.lock",
+      "package": "rack",
+      "severity": "high"
+    },
+    {
+      "advisory": "GHSA-h2jq-g4cq-5ppq",
+      "created_at": "2026-11-12T11:14:30Z",
+      "ecosystem": "rubygems",
+      "manifest": "ruby/Gemfile.lock",
+      "package": "rack",
+      "severity": "high"
+    },
+    {
+      "advisory": "GHSA-hxqx-xwvh-44m2",
+      "created_at": "2026-11-12T11:14:27Z",
+      "ecosystem": "rubygems",
+      "manifest": "ruby/Gemfile.lock",
+      "package": "rack",
+      "severity": "high"
+    },
+    {
+      "advisory": "GHSA-j6w9-fv6q-3q52",
+      "created_at": "2026-11-12T11:14:27Z",
+      "ecosystem": "rubygems",
+      "manifest": "ruby/Gemfile.lock",
+      "package": "rack",
+      "severity": "high"
+    },
+    {
+      "advisory": "GHSA-mxw3-3hh2-x2mh",
+      "created_at": "2026-11-12T11:14:30Z",
+      "ecosystem": "rubygems",
+      "manifest": "ruby/Gemfile.lock",
+      "package": "rack",
+      "severity": "high"
+    },
+    {
+      "advisory": "GHSA-p543-xpfm-54cp",
+      "created_at": "2026-11-12T11:14:29Z",
+      "ecosystem": "rubygems",
+      "manifest": "ruby/Gemfile.lock",
+      "package": "rack",
+      "severity": "high"
+    },
+    {
+      "advisory": "GHSA-p8x9-v4hv-2w4g",
+      "created_at": "2026-11-12T11:14:32Z",
+      "ecosystem": "rubygems",
+      "manifest": "ruby/Gemfile.lock",
+      "package": "rack",
+      "severity": "low"
+    },
+    {
+      "advisory": "GHSA-q2ww-5357-x388",
+      "created_at": "2026-11-12T11:14:31Z",
+      "ecosystem": "rubygems",
+      "manifest": "ruby/Gemfile.lock",
+      "package": "rack",
+      "severity": "medium"
+    },
+    {
+      "advisory": "GHSA-q4qf-9j86-f5mh",
+      "created_at": "2026-11-12T11:14:30Z",
+      "ecosystem": "rubygems",
+      "manifest": "ruby/Gemfile.lock",
+      "package": "rack",
+      "severity": "medium"
+    },
+    {
+      "advisory": "GHSA-qv7j-4883-hwh7",
+      "created_at": "2026-11-12T11:14:31Z",
+      "ecosystem": "rubygems",
+      "manifest": "ruby/Gemfile.lock",
+      "package": "rack",
+      "severity": "medium"
+    },
+    {
+      "advisory": "GHSA-r657-rxjc-j557",
+      "created_at": "2026-11-12T11:14:30Z",
+      "ecosystem": "rubygems",
+      "manifest": "ruby/Gemfile.lock",
+      "package": "rack",
+      "severity": "medium"
+    },
+    {
+      "advisory": "GHSA-v569-hp3g-36wr",
+      "created_at": "2026-11-12T11:14:31Z",
+      "ecosystem": "rubygems",
+      "manifest": "ruby/Gemfile.lock",
+      "package": "rack",
+      "severity": "high"
+    },
+    {
+      "advisory": "GHSA-vgpv-f759-9wx3",
+      "created_at": "2026-11-12T11:14:31Z",
+      "ecosystem": "rubygems",
+      "manifest": "ruby/Gemfile.lock",
+      "package": "rack",
+      "severity": "medium"
+    },
+    {
+      "advisory": "GHSA-vpfw-47h7-xj4g",
+      "created_at": "2026-11-12T11:14:29Z",
+      "ecosystem": "rubygems",
+      "manifest": "ruby/Gemfile.lock",
+      "package": "rack",
+      "severity": "medium"
+    },
+    {
+      "advisory": "GHSA-w9pc-fmgc-vxvw",
+      "created_at": "2026-11-12T11:14:29Z",
+      "ecosystem": "rubygems",
+      "manifest": "ruby/Gemfile.lock",
+      "package": "rack",
+      "severity": "high"
+    },
+    {
+      "advisory": "GHSA-whrj-4476-wvmp",
+      "created_at": "2026-11-12T11:14:30Z",
+      "ecosystem": "rubygems",
+      "manifest": "ruby/Gemfile.lock",
+      "package": "rack",
+      "severity": "medium"
+    },
+    {
+      "advisory": "GHSA-wpv5-97wm-hp9c",
+      "created_at": "2026-11-12T11:14:29Z",
+      "ecosystem": "rubygems",
+      "manifest": "ruby/Gemfile.lock",
+      "package": "rack",
+      "severity": "high"
+    },
+    {
+      "advisory": "GHSA-wq4h-7r42-5hrr",
+      "created_at": "2026-11-12T11:14:27Z",
+      "ecosystem": "rubygems",
+      "manifest": "ruby/Gemfile.lock",
+      "package": "rack",
+      "severity": "critical"
+    },
+    {
+      "advisory": "GHSA-wvg4-6p58-3gh3",
+      "created_at": "2026-11-12T11:14:31Z",
+      "ecosystem": "rubygems",
+      "manifest": "ruby/Gemfile.lock",
+      "package": "rack",
+      "severity": "medium"
+    },
+    {
+      "advisory": "GHSA-x8cg-fq8g-mxfx",
+      "created_at": "2026-11-12T11:14:30Z",
+      "ecosystem": "rubygems",
+      "manifest": "ruby/Gemfile.lock",
+      "package": "rack",
+      "severity": "medium"
+    },
+    {
+      "advisory": "GHSA-xj5v-6v4g-jfw6",
+      "created_at": "2026-11-12T11:14:28Z",
+      "ecosystem": "rubygems",
+      "manifest": "ruby/Gemfile.lock",
+      "package": "rack",
+      "severity": "low"
+    },
+    {
+      "advisory": "GHSA-9hjg-9r4m-mvj7",
+      "created_at": "2026-11-12T11:14:27Z",
+      "ecosystem": "pip",
+      "manifest": "python/requirements.txt",
+      "package": "requests",
+      "severity": "medium"
+    },
+    {
+      "advisory": "GHSA-9wx4-h78v-vm56",
+      "created_at": "2026-11-12T11:14:26Z",
+      "ecosystem": "pip",
+      "manifest": "python/requirements.txt",
+      "package": "requests",
+      "severity": "medium"
+    },
+    {
+      "advisory": "GHSA-gc5v-m9x4-r6x2",
+      "created_at": "2026-11-12T11:14:27Z",
+      "ecosystem": "pip",
+      "manifest": "python/requirements.txt",
+      "package": "requests",
+      "severity": "medium"
+    }
+  ]
+}

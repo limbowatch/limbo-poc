@@ -26,7 +26,11 @@ The same files also pin old versions with **reviewed** advisories: lodash 4.17.2
 
 ## Dependabot
 
-Dependabot alerts are on for this repository, but GitHub shows them only to its maintainers. In a private copy of these files on 2026-11-12, Dependabot raised 95 alerts on the controls and none for these seven advisories ([Limbowatch research log, F-158](https://github.com/limbowatch/limbowatch/blob/main/docs/FINDINGS.md#f-158)).
+Dependabot alerts are on for this repository, but GitHub shows them only to its maintainers, and the workflow's token can't read them. A maintainer's snapshot from 2026-11-12, after Dependabot processed these files: **95 alerts, all on the controls** (jackson-databind 50, rack 34, lodash 4, golang.org/x/net 4, requests 3), **none for the seven advisories above**. The full list is in [proof/dependabot-snapshot.json](proof/dependabot-snapshot.json).
+
+## One scanner that does see one of them
+
+bundler-audit reads the community [ruby-advisory-db](https://github.com/rubysec/ruby-advisory-db), which already has rubyntlm's advisory, so the workflow shows it reporting rubyntlm 0.6.5. GitHub's reviewed database and OSV still don't have it, so Dependabot, OSV-Scanner and the other tools reading those don't report it.
 
 ## Run it yourself
 
