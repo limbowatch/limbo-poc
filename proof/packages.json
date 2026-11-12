@@ -1,0 +1,106 @@
+{
+  "limbo": [
+    {
+      "ecosystem": "npm",
+      "name": "@sinclair/typebox",
+      "version": "0.34.51",
+      "ghsa": "GHSA-976x-prgx-qv35",
+      "repo": "sinclairzx81/sinclair-typebox",
+      "fixed": "0.34.52",
+      "fix_released": "2026-07-11",
+      "file": "node/package-lock.json"
+    },
+    {
+      "ecosystem": "Go",
+      "name": "github.com/nats-io/nats-server/v2",
+      "version": "v2.12.6",
+      "ghsa": "GHSA-38x3-76xf-cq45",
+      "repo": "nats-io/nats-server",
+      "fixed": "v2.12.7",
+      "fix_released": "2026-04-14",
+      "file": "go/go.mod"
+    },
+    {
+      "ecosystem": "Go",
+      "name": "github.com/go-openapi/spec",
+      "version": "v0.22.4",
+      "ghsa": "GHSA-gqhc-vf4h-h7hg",
+      "repo": "go-openapi/spec",
+      "fixed": "v0.22.9",
+      "fix_released": "2026-07-20",
+      "file": "go/go.mod"
+    },
+    {
+      "ecosystem": "Go",
+      "name": "github.com/pelletier/go-toml/v2",
+      "version": "v2.4.2",
+      "ghsa": "GHSA-frc4-6h9q-39fq",
+      "repo": "pelletier/go-toml",
+      "fixed": "v2.4.3",
+      "fix_released": "2026-07-05",
+      "file": "go/go.mod"
+    },
+    {
+      "ecosystem": "RubyGems",
+      "name": "mustache",
+      "version": "1.1.2",
+      "ghsa": "GHSA-5hrj-7fc3-cmx9",
+      "repo": "mustache/mustache",
+      "fixed": "1.1.3",
+      "fix_released": "2026-08-20",
+      "file": "ruby/Gemfile.lock"
+    },
+    {
+      "ecosystem": "RubyGems",
+      "name": "rubyntlm",
+      "version": "0.6.5",
+      "ghsa": "GHSA-cx24-f932-rr55",
+      "repo": "winrb/rubyntlm",
+      "fixed": "0.6.6",
+      "fix_released": "2026-09-09",
+      "file": "ruby/Gemfile.lock"
+    },
+    {
+      "ecosystem": "PyPI",
+      "name": "scapy",
+      "version": "2.7.0",
+      "ghsa": "GHSA-c547-xwrv-q9jm",
+      "repo": "secdev/scapy",
+      "fixed": "2.8.0",
+      "fix_released": "2026-10-02",
+      "file": "python/requirements.txt"
+    }
+  ],
+  "controls": [
+    {
+      "ecosystem": "npm",
+      "name": "lodash",
+      "version": "4.17.20",
+      "file": "node/package-lock.json"
+    },
+    {
+      "ecosystem": "Go",
+      "name": "golang.org/x/net",
+      "version": "v0.17.0",
+      "file": "go/go.mod"
+    },
+    {
+      "ecosystem": "Maven",
+      "name": "com.fasterxml.jackson.core:jackson-databind",
+      "version": "2.9.10",
+      "file": "java/pom.xml"
+    },
+    {
+      "ecosystem": "RubyGems",
+      "name": "rack",
+      "version": "2.2.0",
+      "file": "ruby/Gemfile.lock"
+    },
+    {
+      "ecosystem": "PyPI",
+      "name": "requests",
+      "version": "2.31.0",
+      "file": "python/requirements.txt"
+    }
+  ]
+}

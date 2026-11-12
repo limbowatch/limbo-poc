@@ -1,0 +1,71 @@
+# Runs Limbowatch and the usual scanners on the same dependency files, then writes who reported what to the job
+# summary. Daily, so the evidence stays current: when GitHub reviews an advisory, the table shows it.
+name: proof
+
+on:
+  push:
+    branches: [main]
+  schedule:
+    - cron: "17 6 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  security-events: read  # lets compare.py try to read this repository's Dependabot alerts
+
+jobs:
+  proof:
+    runs-on: ubuntu-latest
+    env:
+      PROOF_OUT: ${{ runner.temp }}/out
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - run: mkdir -p "$PROOF_OUT"
+
+      - name: Limbowatch (the published action)
+        id: limbo
+        uses: limbowatch/limbowatch-action@v0.1.0a13
+        with:
+          fail-on: none
+          reports: limbowatch-report
+      - run: cp "${{ steps.limbo.outputs.report }}" "$PROOF_OUT/limbowatch.json"
+
+      - name: OSV-Scanner 2.7.1 (reads OSV)
+        run: |
+          curl -fsSLO https://github.com/google/osv-scanner/releases/download/v2.7.1/osv-scanner_linux_amd64
+          curl -fsSLO https://github.com/google/osv-scanner/releases/download/v2.7.1/osv-scanner_SHA256SUMS
+          grep ' osv-scanner_linux_amd64$' osv-scanner_SHA256SUMS | sha256sum -c -
+          install -m 755 osv-scanner_linux_amd64 "$RUNNER_TEMP/osv-scanner" && rm osv-scanner_linux_amd64 osv-scanner_SHA256SUMS
+          "$RUNNER_TEMP/osv-scanner" scan source -r node python java go ruby --format table || true
+          "$RUNNER_TEMP/osv-scanner" scan source -r node python java go ruby --format json --output "$PROOF_OUT/osv-scanner.json" || true
+
+      - name: npm audit (reads GitHub's reviewed database)
+        working-directory: node
+        run: |
+          npm audit || true
+          npm audit --json > "$PROOF_OUT/npm-audit.json" || true
+
+      - name: pip-audit 2.10.1 (reads PyPI's vulnerability data, from OSV)
+        run: |
+          pipx run pip-audit==2.10.1 -r python/requirements.txt --no-deps --disable-pip || true
+          pipx run pip-audit==2.10.1 -r python/requirements.txt --no-deps --disable-pip -f json -o "$PROOF_OUT/pip-audit.json" || true
+
+      - name: bundler-audit 0.9.3 (reads ruby-advisory-db)
+        run: |
+          gem install --user-install --no-document bundler-audit -v 0.9.3
+          export PATH="$(ruby -r rubygems -e 'puts Gem.user_dir')/bin:$PATH"
+          bundle-audit update
+          cd ruby
+          bundle-audit check || true
+          bundle-audit check --format json --output "$PROOF_OUT/bundler-audit.json" || true
+
+      - name: Who reported what (also asks GitHub whether each advisory is published and reviewed)
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: python3 proof/compare.py
+
+      - uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        if: always()
+        with:
+          name: evidence
+          path: ${{ runner.temp }}/out

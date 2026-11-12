@@ -1,0 +1,17 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    mustache (1.1.2)
+    rack (2.2.0)
+    rubyntlm (0.6.5)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  mustache (= 1.1.2)
+  rack (= 2.2.0)
+  rubyntlm (= 0.6.5)
+
+BUNDLED WITH
+   2.5.0
