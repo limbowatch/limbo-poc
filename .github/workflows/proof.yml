@@ -16,11 +16,11 @@ permissions:
 jobs:
   proof:
     runs-on: ubuntu-latest
-    env:
-      PROOF_OUT: ${{ runner.temp }}/out
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
-      - run: mkdir -p "$PROOF_OUT"
+      - run: |
+          echo "PROOF_OUT=$RUNNER_TEMP/out" >> "$GITHUB_ENV"
+          mkdir -p "$RUNNER_TEMP/out"
 
       - name: Limbowatch (the published action)
         id: limbo
