@@ -24,7 +24,7 @@ jobs:
 
       - name: Limbowatch (the published action)
         id: limbo
-        uses: limbowatch/limbowatch-action@v0.1.0a20
+        uses: limbowatch/limbowatch-action@v0.1.0a21
         with:
           fail-on: none
           reports: limbowatch-report
